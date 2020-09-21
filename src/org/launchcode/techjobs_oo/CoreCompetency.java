@@ -3,6 +3,10 @@ package org.launchcode.techjobs_oo;
 import java.util.Objects;
 
 public class CoreCompetency {
+    public int getId() {
+        return id;
+    }
+
     private int id;
     private static int nextId = 1;
     private String value;
@@ -10,6 +14,14 @@ public class CoreCompetency {
     public CoreCompetency() {
         this.id = nextId;
         nextId++;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 
     public CoreCompetency(String value) {
