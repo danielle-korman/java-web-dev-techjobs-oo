@@ -57,7 +57,7 @@ Job test_job2;
         Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String testString = test_job.toString();
         assertEquals(testString, "\n" +
-                "ID: 3" +
+                "ID: " + test_job.id +
                 "\nName: Product tester" +
                 "\nEmployer: ACME" +
                 "\nLocation: Desert" +
