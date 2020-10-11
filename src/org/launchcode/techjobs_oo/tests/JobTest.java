@@ -1,6 +1,9 @@
 package org.launchcode.techjobs_oo.tests;
 import org.junit.Before;
 import org.junit.Test;
+
+import static java.lang.String.copyValueOf;
+import static java.lang.String.valueOf;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -33,6 +36,12 @@ Job test_job2;
     assertTrue(test_job.location instanceof Location);
     assertTrue(test_job.positionType instanceof PositionType);
     assertTrue(test_job.coreCompetency instanceof CoreCompetency);
+    assertEquals("Product tester", test_job.name);
+    assertEquals("ACME", valueOf(test_job.employer));
+    assertEquals("Desert", valueOf(test_job.location));
+    assertEquals("Quality control", valueOf(test_job.positionType));
+    assertEquals("Persistence", valueOf(test_job.coreCompetency));
+
 }
 
 @Test
